@@ -20,12 +20,8 @@ private url = "http://localhost:8080/";
     return this.httpClinet.get<Employee[]>(`${this.url + "getAllEmp"}`);
   }
 
-
   createEmployee(employee : Employee): Observable<Object>{
     return this.httpClinet.post(`${this.url + 'saveEmp'}` ,employee);
   }
-
-
-
 
 }
